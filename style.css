@@ -1,0 +1,25 @@
+/* Page Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    background-color: hsl(0, 0%, 0%);
+}
+
+/* Navigation */
+
+nav {
+    display: flex; /* destrava justify-content */
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    color: hsl(0, 0%, 100%);
+    list-style: none;
+    display: inline;
+}
