@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uno Market</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -13,26 +16,47 @@
         <a href="#" class="logo">Uno Market</a>
         <div class="menu">
           <ul>
-            <li class="secondary-title">Início</li>
-            <li class="secondary-title">O Evento</li>
-            <li class="secondary-title">Contato</li>
+            <li class="small-text">Início</li>
+            <li class="small-text">O Evento</li>
+            <li class="small-text">Contato</li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main>
-      <h1>Black Friday na Uno Market</h1>
-      <div>Começa em X Horas</div>
-      <div>Produto 1 Produto 2 Produto 3 Produto 4</div>
-      <div>
+      <h1 class="title">Black Friday Uno Market</h1>
+      <p class="normal-text">Começa em X Horas</div>
+      <div id="product-container">
+        <div class="product">
+          <img src="./assets/gameboy-console.jpg" alt="">
+          <p class="product-description small-text">GameBoy Color</p>
+          <p class="product-discount">30% de desconto</p>
+        </div>
+        <div class="product">
+          <img src="./assets/mario-actionfigure.jpg" alt="">
+          <p class="product-description small-text">Action Figure Super Mario</p>
+          <p class="product-discount">15% de desconto</p>
+        </div>
+        <div class="product">
+          <img src="./assets/ps4-controller.jpg" alt="">
+          <p class="product-description small-text">Controle PS4</p>
+          <p class="product-discount">20% de desconto</p>
+        </div>
+        <div class="product">
+          <img src="./assets/ps5-console.jpg" alt="">
+          <p class="product-description small-text">NOVO Console PS5</p>
+          <p class="product-discount">10% de desconto</p>
+        </div>
+      </div>
+      <p class="normal-text">
         Esses e outros produtos estarão em promoção. Faça o cadastro abaixo para
         saber mais...
-      </div>
-      <div>
+      </p>
+      <p class="normal-text">
         Digite seu melhor e-mail
         <input type="text" />
-      </div>
+      </p>
     </main>
 
     <footer>Uno Market &copy; 2021</footer>

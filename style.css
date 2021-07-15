@@ -8,6 +8,43 @@
 /* Base */
 body {
     background-color: hsl(0, 0%, 0%);
+    font: 400 1rem 'Inter', sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.title {
+    font: 700 3rem 'Inter', sans-serif;
+    color:hsla(0, 0%, 100%, 1);
+}
+
+.small-text {
+    font: 300 0.8rem 'Inter', sans-serif;
+    color:hsla(0, 0%, 100%, 1);
+}
+
+.normal-text {
+    font: 400 1rem 'Inter', sans-serif;
+    color:hsla(0, 0%, 100%, 1);
+}
+
+.product-discount {
+    font: 700 1rem 'Inter', sans-serif;
+    color: hsla(0, 100%, 50%, 0.7);
+}
+
+/* Logo */
+
+a.logo {
+    font: 300 0.8rem 'Inter', sans-serif;
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 1);
 }
 
 /* Navigation */
@@ -19,7 +56,21 @@ nav {
 }
 
 nav ul li {
-    color: hsl(0, 0%, 100%);
     list-style: none;
     display: inline;
+    font: 300 0.8rem 'Inter', sans-serif;
+}
+
+/* Main */
+main h1,
+main p {
+    text-align: center;
+}
+
+main #product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
