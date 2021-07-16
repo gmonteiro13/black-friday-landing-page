@@ -19,6 +19,33 @@ img {
     border-radius: 50%;
 }
 
+button {
+    padding: 0px;
+    height: 1.5rem;
+    display: inline-flex; /* allows item aligning */
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    border-color: hsla(0, 0%, 100%, 1);
+    font: 700 1rem 'Inter', sans-serif;
+    transition: background 0.3s;
+}
+
+input {
+    height: 1.5rem;
+    border: 1px solid hsla(49, 95%, 58%, 0.966);
+}
+
+button:hover {
+    background-color: hsla(49, 95%, 58%, 0.966);
+}
+
+.logo {
+    font: 400 0.8rem 'Inter', sans-serif;
+    text-decoration: none;
+    color:hsla(49, 95%, 58%, 0.966);
+}
+
 .title {
     font: 700 3rem 'Inter', sans-serif;
     color:hsla(0, 0%, 100%, 1);
@@ -32,6 +59,7 @@ img {
 .normal-text {
     font: 400 1rem 'Inter', sans-serif;
     color:hsla(0, 0%, 100%, 1);
+    margin: 1rem;
 }
 
 .product-discount {
@@ -39,26 +67,31 @@ img {
     color: hsla(0, 100%, 50%, 0.7);
 }
 
-/* Logo */
 
-a.logo {
-    font: 300 0.8rem 'Inter', sans-serif;
-    text-decoration: none;
-    color: hsla(0, 0%, 100%, 1);
+/* Header */
+#header {
+    margin-bottom: 1.5rem;
+    height: 3rem;
 }
 
 /* Navigation */
-
 nav {
-    display: flex; /* destrava justify-content */
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 nav ul li {
     list-style: none;
     display: inline;
-    font: 300 0.8rem 'Inter', sans-serif;
+    text-align: center;
 }
 
 /* Main */
@@ -73,4 +106,11 @@ main #product-container {
     gap: 2rem;
     justify-content: center;
     align-items: center;
+}
+
+main #register-container {
+    display: grid;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
 }

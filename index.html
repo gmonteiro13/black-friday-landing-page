@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="container">
         <a href="#" class="logo">Uno Market</a>
         <div class="menu">
@@ -53,12 +53,13 @@
         Esses e outros produtos estarão em promoção. Faça o cadastro abaixo para
         saber mais...
       </p>
-      <p class="normal-text">
-        Digite seu melhor e-mail
-        <input type="text" />
-      </p>
+      <div id="register-container">
+        <input type="text" id="user-email" placeholder="Digite seu e-mail aqui" />
+        <button type="submit" onclick="submitEmail()"><p>Cadastrar</p></button>
+      </div>
     </main>
 
     <footer>Uno Market &copy; 2021</footer>
+    <script src="./script.js"></script>
   </body>
 </html>
