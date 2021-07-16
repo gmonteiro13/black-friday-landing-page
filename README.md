@@ -11,3 +11,6 @@ JavaScript
 
 ## Funcionalidades
 Possui um contador, projetado para finalizar no dia 31/07/2021, e uma validação básica de e-mail via Regex.
+
+## Próximos passos...
+Incrementar a estilização, adicionar melhor responsividade a dispositivos maiores
