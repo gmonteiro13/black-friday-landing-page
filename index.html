@@ -16,9 +16,9 @@
         <a href="#" class="logo">Uno Market</a>
         <div class="menu">
           <ul>
-            <li class="small-text">Início</li>
-            <li class="small-text">O Evento</li>
-            <li class="small-text">Contato</li>
+            <li><a class="small-text" href="#">Início</a></li>
+            <li><a class="small-text" href="#">O Evento</a></li>
+            <li><a class="small-text" href="https://github.com/gmonteiro13" target="_blank">Contato</a></li>
           </ul>
         </div>
       </nav>
@@ -26,7 +26,12 @@
 
     <main>
       <h1 class="title">Black Friday Uno Market</h1>
-      <p class="normal-text">Começa em X Horas</div>
+      <div id="countdown-container">
+        <div id="time-days" class="normal-text"></div>
+        <div id="time-hours" class="normal-text"></div>
+        <div id="time-minutes" class="normal-text"></div>
+        <div id="time-seconds" class="normal-text">S</div>
+      </div>
       <div id="product-container">
         <div class="product">
           <img src="./assets/gameboy-console.jpg" alt="">
@@ -56,10 +61,11 @@
       <div id="register-container">
         <input type="text" id="user-email" placeholder="Digite seu e-mail aqui" />
         <button type="submit" onclick="submitEmail()"><p>Cadastrar</p></button>
+        <p id="validation" class="small-text"></p>
       </div>
     </main>
 
     <footer>Uno Market &copy; 2021</footer>
-    <script src="./script.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

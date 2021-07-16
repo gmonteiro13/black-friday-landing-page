@@ -36,13 +36,16 @@ input {
     border: 1px solid hsla(49, 95%, 58%, 0.966);
 }
 
+a {
+    text-decoration: none;
+}
+
 button:hover {
     background-color: hsla(49, 95%, 58%, 0.966);
 }
 
 .logo {
     font: 400 0.8rem 'Inter', sans-serif;
-    text-decoration: none;
     color:hsla(49, 95%, 58%, 0.966);
 }
 
@@ -94,9 +97,47 @@ nav ul li {
     text-align: center;
 }
 
+nav ul li a {
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: hsla(49, 95%, 58%, 0.966);
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: hsla(49, 95%, 58%, 0.966);
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
 /* Main */
 main h1,
 main p {
+    text-align: center;
+}
+
+main #countdown-container  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #countdown-container * {
+    flex: 1 0 34%;
     text-align: center;
 }
 
@@ -113,4 +154,13 @@ main #register-container {
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
+}
+
+/* Validation */
+.validation-ok {
+    color: hsla(110, 73%, 37%, 0.966);
+}
+
+.validation-error {
+    color: hsla(0, 100%, 50%, 0.7);
 }
